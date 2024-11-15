@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .montserrat {
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .font-spacing {
+      letter-spacing: 4px;
+    }
+
+    .bg-c-green {
+      background-color: hsl(158, 36%, 37%);
+    }
+
+    .bg-c-green:active {
+      background-color: hsl(159, 36%, 17%);
+    }
+
+    .text-c-green {
+      color: hsl(158, 36%, 37%);
+    }
+
+    .bg-c-cream {
+      background-color: hsl(30, 38%, 92%);
+    }
+
+    .fraunces {
+      font-family: "Fraunces", serif;
+    }
+
+    .bg-image {
+      background-image: url("./images/image-product-desktop.jpg");
+    }
+
+    @media only screen and (max-width: 375px) {
+      .bg-image {
+        background-image: url("./images/image-product-mobile.jpg");
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="h-screen bg-c-cream flex flex-col p-4 lg:gap-2 justify-center items-center">
+  <div
+    class="flex flex-col w-[340px] h-[600px] lg:w-[850px] lg:h-[600px] lg:flex-row  bg-white rounded-lg lg:rounded-xl shadow-md">
+    <div class="h-[300px] lg:h-auto
+    
+     lg:w-1/2 bg-image rounded-tr-lg rounded-t-lg lg:rounded-l-xl lg:rounded-r-none "></div>
+    <div class="lg:w-1/2 flex flex-col p-6 lg:p-12 gap-3 lg:gap-6">
+
+      <p class="montserrat lg:text-xl font-spacing text-slate-500">PERFUME</p>
+
+      <p class="fraunces text-3xl lg:text-5xl font-bold">Gabrielle Essence Eau De Parfum </p>
+
+      <p class="montserrat text-sm lg:text-lg lg:font-semibold text-slate-500 "> A floral, solar and voluptuous
+        interpretation composed
+        by
+        Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.</p>
+
+      <div class="flex flex-row items-center gap-4 lg:mb-2">
+        <p class="fraunces text-3xl lg:text-5xl text-c-green font-bold">$149.99</p>
+        <p class="text-slate-500 lg:text-lg lg:font-semibold line-through">$169.99</p>
+      </div>
+      <button
+        class="flex flex-row gap-2 lg:gap-4 justify-center p-4 lg:p-5 items-center bg-c-green  rounded-lg lg:rounded-xl">
+        <img src="./images/icon-cart.svg" class="w-5 h-5">
+        <p class="text-white font-semibold lg:text-xl">Add to Cart</p>
+      </button>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">pratham mhavale</a>.
+  </div>
+</body>
+
+</html>
